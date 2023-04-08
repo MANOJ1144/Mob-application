@@ -1,12 +1,11 @@
 // Write a dart program to calculate the sum of natural numbers.
 
-void main() {
-  int n = 3;
-  int sum = 0;
-  
-  for (int i = 1; i <= n; i++) {
-    sum += i;
-  }
+void main(){
 
-  print("The sum of first $n natural numbers is $sum.");
+  int number = 3;
+
+  print("Sum of natural number up to $number is ${sumNaturalNum(number)}.");
+
 }
+
+int sumNaturalNum(int number) => (number * (number + 1) / 2).floor();
